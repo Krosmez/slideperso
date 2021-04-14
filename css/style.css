@@ -1,0 +1,390 @@
+:root {
+    --fftitle:"Raleway";
+    --ffbody:"Montserrat";
+    --primary:#F16822;
+    --secondary:#333333;
+}
+/* ------------------------------------------- */
+/* ------------------ FONTS ------------------ */
+/* ------------------------------------------- */
+
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Montserrat/montserrat-v15-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/Montserrat/montserrat-v15-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Montserrat/montserrat-v15-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Montserrat/montserrat-v15-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Montserrat/montserrat-v15-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Montserrat/montserrat-v15-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-500 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/Montserrat/montserrat-v15-latin-500.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/Montserrat/montserrat-v15-latin-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Montserrat/montserrat-v15-latin-500.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Montserrat/montserrat-v15-latin-500.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Montserrat/montserrat-v15-latin-500.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Montserrat/montserrat-v15-latin-500.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Montserrat/montserrat-v15-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+            url('../fonts/Montserrat/montserrat-v15-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Montserrat/montserrat-v15-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Montserrat/montserrat-v15-latin-700.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Montserrat/montserrat-v15-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Montserrat/montserrat-v15-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/Raleway/raleway-v19-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/Raleway/raleway-v19-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Raleway/raleway-v19-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/Raleway/raleway-v19-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Raleway/raleway-v19-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Raleway/raleway-v19-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-600 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/Raleway/raleway-v19-latin-600.eot'); /* IE9 Compat Modes */
+    src: local(''),
+            url('../fonts/Raleway/raleway-v19-latin-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Raleway/raleway-v19-latin-600.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Raleway/raleway-v19-latin-600.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Raleway/raleway-v19-latin-600.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Raleway/raleway-v19-latin-600.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+/* raleway-700 - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/Raleway/raleway-v19-latin-700.eot'); /* IE9 Compat Modes */
+    src: local(''),
+            url('../fonts/Raleway/raleway-v19-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+            url('../fonts/Raleway/raleway-v19-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+            url('../fonts/Raleway/raleway-v19-latin-700.woff') format('woff'), /* Modern Browsers */
+            url('../fonts/Raleway/raleway-v19-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+            url('../fonts/Raleway/raleway-v19-latin-700.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+body {
+    font-family: var(--ffbody),sans-serif;
+    font-display: swap;
+}
+h1,h2,h3,h4 {
+    font-family: var(--fftitle) ,sans-serif;
+    font-display: swap;
+}
+
+/* ------------------------------------------- */
+/* ---------------- CONTAINER ---------------- */
+/* ------------------------------------------- */
+
+.container {
+    max-width: 32.5rem;
+    margin: auto;
+}
+
+@media (min-width: 36em) {
+    /* 36em * 16 = 576px */
+    .container {
+        max-width: 50rem;
+    }
+}
+
+@media (min-width: 48em) {
+    /* 48em * 16 = 768px */
+    .container {
+        max-width: 69rem;
+    }
+}
+
+@media (min-width: 62em) {
+    /* 62em * 16 = 992px */
+    .container {
+        max-width: 85rem;
+    }
+}
+
+@media (min-width: 75em) {
+    /* 75em * 16 = 1200px */
+    .container {
+        max-width: 100rem;
+    }
+}
+
+@media (min-width: 105em) {
+    .container {
+        max-width: 150rem;
+    }
+}
+/* ------------------------------------------- */
+/* ----------------- HEADER ------------------ */
+/* ------------------------------------------- */
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 3.5rem 0;
+}
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menu-item {
+    margin:0 4rem;
+    padding: 1.5rem 2rem;
+}
+.menu-item a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--secondary);
+}
+.menu-item:hover {
+    background-color: var(--primary);
+}
+.menu-item:hover a {
+    color: #FFF;
+}
+/* .menu {
+    transform: translateX(-100%);
+    background-color: #fff;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 10000;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.toggle-menu {
+    position: relative;
+    z-index: 10001;
+    padding: 1rem 0;
+    top: 1rem;
+    left: 1rem;
+    border: 0;
+    width: 3rem;
+    height: 2.2rem;
+    background-color: #000;
+    background-clip: content-box;
+}
+.toggle-menu::before, .toggle-menu::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 0.2rem;
+    background-color: #000;
+    transition: .3s;
+    transform-origin: left center;
+}
+
+.toggle-menu::before {
+    top: 0;
+}
+
+.toggle-menu::after {
+    bottom: 0;
+}
+
+.toggle-menu[aria-expanded="true"] {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.toggle-menu[aria-expanded="true"]::before {
+    transform: rotate(42.5deg);
+}
+
+.toggle-menu[aria-expanded="true"]::after {
+    transform: rotate(-42.5deg);
+}
+
+.menu:not([hidden]) {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: all;
+}
+.no-scroll {
+    overflow: hidden;
+} */
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo img {
+    margin-right: 2rem;
+}
+h1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: #707070;
+}
+h1 strong {
+    font-size: 1.4rem;
+}
+/* ------------------------------------------- */
+/* ------------------ MAIN ------------------- */
+/* ------------------------------------------- */
+
+
+
+/* ~~~~~~~ HERO ~~~~~~~ */
+
+
+section {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .slide-ctn {
+    width: 100%;
+    height: 100%;
+  }
+  .slide-card {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+  }
+  .slide-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.685);
+    z-index: -1;
+  }
+  .top {
+    z-index: 3;
+    transition: 0.5s ease transform;
+  }
+  .slide-card.active {
+    z-index: 3;
+    transform: translateX(0);
+  }
+  .slide-card.transition {
+    transition: 0.5s ease transform;
+  }
+  .card-1,
+  .card-2,
+  .card-3,
+  .card-4 {
+    background-image: url(../img/bcg_hero.png);
+  }
+  
+  .buttons div {
+    cursor: pointer;
+    pointer-events: all;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.582);
+  }
+  .buttons div:hover {
+    background-color: gray;
+  }
+  .dots {
+    z-index: 5;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .dots .dot {
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    background-color: rgba(255, 255, 255, 0.185);
+    border-radius: 10px;
+    margin: 10px;
+    transition: 0.3s ease width;
+    cursor: pointer;
+  }
+  .dots .dot.active {
+    background-color: white;
+    width: 40px;
+  }
+  .buttons {
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    height: auto;
+    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    width: auto;
+    font-size: 50px;
+  }
+  .card-1 {
+    flex-direction: column;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .card-1 .content {
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    left: 20%;
+  }
+  .card-1 h1 {
+    font-size: 50px;
+  }
+  .card-1 p {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+  .card-1 button {
+    display: inline-block;
+    padding: 15px 50px;
+    font-size: 24px;
+    outline: none;
+    border: none;
+    background-color: white;
+    margin-top: 20px;
+  }
+  @media (max-width: 768px) {
+    .card-1 .content {
+      left: 20px;
+    }
+    .dots {
+      left: 0;
+      transform: translateX(0);
+    }
+  }
