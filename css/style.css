@@ -545,3 +545,15 @@ h1 strong {
 /* ------------------------------------------- */
 /* ----------------- FOOTER ------------------ */
 /* ------------------------------------------- */
+
+footer nav {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-ul li a {
+  text-decoration: none;
+}
+.footer-ul li a:before {
+  content:url(../img/angle-double-right.svg);
+  margin-right: 1rem;
+}
