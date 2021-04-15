@@ -5,7 +5,7 @@ const buttons = document.querySelectorAll(".buttons div");
 const dotsEl = document.querySelector(".dots");
 
 for(i=0; i < card.length ;i++){
-    card[i].classList.add("card-"+(i+1));
+  card[i].classList.add("card-"+(i+1));
 }
 let timeoutId;
 
@@ -84,7 +84,7 @@ function getPrevSlide() {
 getPosition();
 
 // dots
-slides.forEach((slide) => {
+slides.forEach(() => {
   const dot = document.createElement("div");
   dot.classList.add("dot");
   dotsEl.appendChild(dot);
