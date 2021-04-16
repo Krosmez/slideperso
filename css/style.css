@@ -91,9 +91,43 @@ body {
   font-family: var(--ffbody),sans-serif;
   font-display: swap;
 }
-h1,h2,h3,h4 {
+h1,h2,h3 {
   font-family: var(--fftitle) ,sans-serif;
   font-display: swap;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #707070;
+}
+h1 strong {
+  font-size: 1.4rem;
+}
+main h2{
+  font-size: 4.8rem;
+  font-weight: 700;
+  color: var(--secondary);
+}
+.hero h2 {
+  font-size: 6.4rem;
+  color: var(--primary);
+}
+.about h2 {
+  color: var(--primary);
+}
+.review h2 {
+  color: #fff;
+}
+h3 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+.main-service h3 {
+  color: var(--secondary);
+}
+.last-post h3 {
+  font-size: 4rem;
 }
 /* ------------------------------------------- */
 /* ---------------- CONTAINER ---------------- */
@@ -245,12 +279,8 @@ header .container {
 h1 {
     display: flex;
     flex-direction: column;
-    font-size: 2rem;
-    color: #707070;
 }
-h1 strong {
-    font-size: 1.4rem;
-}
+
 /* ------------------------------------------- */
 /* ------------------ MAIN ------------------- */
 /* ------------------------------------------- */
@@ -258,10 +288,13 @@ h1 strong {
 /* ~~~~~~~ HERO ~~~~~~~ */
 
 .hero {
-  min-height: 100vh;
+  min-height: 86vh;
   min-width: 100%;
   position: relative;
   overflow-x: hidden;
+}
+.hero .dots {
+  padding-bottom: 8rem;
 }
 .slide-ctn {
   width: 100%;
@@ -545,15 +578,83 @@ h1 strong {
 /* ------------------------------------------- */
 /* ----------------- FOOTER ------------------ */
 /* ------------------------------------------- */
-
-footer nav {
+footer {
+  background-color:var(--secondary) ;
+  padding-top: 11rem;
+}
+footer h3 {
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+/* ~~~~~~~ Recents / tags / address ~~~~~~~ */
+.top-footer {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 10rem;
 }
+.address-ul li a,
+.address-ul li p:last-child,
 .footer-ul li a {
   text-decoration: none;
+  color: #ccc;
+}
+.footer-ul li:not(:first-child) {
+  margin-bottom: 3rem;
 }
 .footer-ul li a:before {
   content:url(../img/angle-double-right.svg);
   margin-right: 1rem;
+}
+.tags{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 23rem;
+}
+.tags li {
+  margin-bottom: 1.2rem;
+}
+.tags li a {
+  padding: .5rem 1.2rem;
+  text-decoration: none;
+  color:#ccc ;
+  background-color: #444;
+}
+.address-ul li:not(:first-child) {
+  margin-bottom: 4rem;
+}
+.address-ul li:nth-child(2) p::before {
+  content:url(../img/map-marker.svg);
+  margin-right: 1rem;
+}
+.address-ul li:nth-child(3) a::before {
+  content:url(../img/phone.svg);
+  margin-right: 1rem;
+}
+.address-ul li:last-child a::before {
+  content:url(../img/envelope.svg);
+  margin-right: 1rem;
+}
+/* ~~~~~~~ COPY / Social ~~~~~~~ */
+.copy {
+  display: flex;
+  justify-content: space-between;
+  color: #777;
+  border-top: 1px solid #777;
+  padding:3rem 0;
+}
+.social-ul {
+  display: flex;
+}
+.social-ul li:first-child a::before {
+  content:url(../img/icons8-facebook.svg);
+}
+.social-ul li:nth-child(2) a::before {
+  content:url(../img/icons8-twitter.svg);
+}
+.social-ul li:nth-child(2) {
+  margin: 0 3rem;
+}
+.social-ul li:last-child a::before {
+  content:url(../img/icons8-google-plus.svg);
 }
