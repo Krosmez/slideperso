@@ -129,6 +129,29 @@ h3 {
 .last-post h3 {
   font-size: 4rem;
 }
+.slide-card .content p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 3.2rem;
+}
+.about p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+.last-post p:first-child{
+  font-size: 2.4rem;
+}
+.fact-info .fact-card p:first-child{
+  font-weight: 700;
+  font-size: 6.4rem;
+}
+.fact-info .fact-card p:last-child{
+  font-weight: 700;
+  font-size: 2.4rem;
+  text-transform: uppercase;
+}
+
 /* ------------------------------------------- */
 /* ---------------- CONTAINER ---------------- */
 /* ------------------------------------------- */
