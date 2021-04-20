@@ -202,13 +202,7 @@ header .container {
     justify-content: space-between;
     padding: 3.5rem 0;
 }
-.menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 .menu-item {
-    margin:0 4rem;
     padding: 1.5rem 2rem;
 }
 .menu-item a {
@@ -222,7 +216,7 @@ header .container {
 .menu-item:hover a {
     color: #FFF;
 }
-/* .menu {
+.menu {
     transform: translateX(-100%);
     background-color: #fff;
     position: fixed;
@@ -230,6 +224,8 @@ header .container {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100vw;
+    max-height: 100vh;
     top: 0;
     right: 0;
     bottom: 0;
@@ -290,7 +286,7 @@ header .container {
 }
 .no-scroll {
     overflow: hidden;
-} */
+}
 .logo {
     display: flex;
     align-items: center;
